@@ -1,0 +1,49 @@
+{
+  "input_file": "/Users/alessia/Desktop/da mandare al prof/Submission For ChemistryOpen/Revision/CALCOLI/Script nuovi/MUV_832.xlsx",
+  "round1_directory": "/Users/alessia/Desktop/da mandare al prof/Submission For ChemistryOpen/Revision/CALCOLI/Script nuovi/MUV_832_nested_svm_results",
+  "output_directory": "/Users/alessia/Desktop/da mandare al prof/Submission For ChemistryOpen/Revision/CALCOLI/Script nuovi/MUV_832_nested_shap_round2_results",
+  "n_samples": 15029,
+  "n_input_features": 807,
+  "class_0_count": 14999,
+  "class_1_count": 30,
+  "outer_folds_reused_from_round1": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "inner_folds": 3,
+  "random_state": 42,
+  "top_k": 50,
+  "shap_algorithm": "permutation",
+  "shap_model_output": "SVC decision_function",
+  "shap_scope": "outer training only",
+  "shap_explain_sampling": "All available outer-training actives up to the sample cap, then randomly sampled outer-training inactives.",
+  "shap_explain_samples_max": 60,
+  "shap_background_samples_max": 40,
+  "reduced_model_kernel": "rbf",
+  "class_weight": "balanced",
+  "resampling": "none",
+  "probability_for_reduced_model": true,
+  "parameter_grid": {
+    "svc__C": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svc__gamma": [
+      "scale",
+      0.001,
+      0.01,
+      0.1
+    ]
+  },
+  "threshold_method": "Youden J on inner-CV predictions generated exclusively from outer-training data.",
+  "ef_fraction": 0.01,
+  "primary_metrics": [
+    "roc_auc",
+    "ef1_percent"
+  ]
+}

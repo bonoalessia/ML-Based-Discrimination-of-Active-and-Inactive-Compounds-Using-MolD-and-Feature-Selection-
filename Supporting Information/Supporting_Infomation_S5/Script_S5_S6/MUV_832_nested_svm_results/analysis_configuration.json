@@ -1,0 +1,29 @@
+{
+  "input_file": "/Users/alessia/Desktop/da mandare al prof/Submission For ChemistryOpen/Revision/Scripts Modificati/Script 1 - Section 2.3/MUV_832.xlsx",
+  "sheet": "MD",
+  "n_samples": 15029,
+  "n_input_features": 807,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "random_state": 42,
+  "class_weight": "balanced",
+  "resampling": "none",
+  "kernel": "rbf",
+  "probability": true,
+  "ef_fraction": 0.01,
+  "threshold_method": "Youden J on inner-CV predictions from outer-training data only",
+  "parameter_grid": {
+    "svc__C": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svc__gamma": [
+      "scale",
+      0.001,
+      0.01,
+      0.1
+    ]
+  }
+}
