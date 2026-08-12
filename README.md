@@ -1,0 +1,2 @@
+# ML-Based-Discrimination-of-Active-and-Inactive-Compounds-Using-MolD-and-Feature-Selection-
+Computational workflow associated with the study “ML-Based Discrimination of Active and Inactive Compounds Using MolD and Feature Selection”, including MOLDESTO molecular descriptors, SVM classification, SHAP-based feature selection, leakage-controlled nested cross-validation, and benchmark evaluation on MUV and LIT-PCBA.
